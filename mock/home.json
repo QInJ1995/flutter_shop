@@ -1,0 +1,108 @@
+{
+"status":"1",
+"msg":"成功",
+  "data":{
+    "current":1,
+    "size":20,
+    "total":1,
+    "slides": [
+      "https://img12.360buyimg.com/babel/s1180x940_jfs/t1/119012/20/7370/86144/5ec34493E12904fc2/2db2e937aec8ac91.jpg.webp",
+      "https://img14.360buyimg.com/pop/s1180x940_jfs/t1/114575/32/7274/94548/5ec2284fE07e630b1/0dd4b3ecfcf2ea6b.jpg.webp",
+      "https://img10.360buyimg.com/pop/s1180x940_jfs/t1/101931/12/13443/166666/5e57a33eEdce96613/705893ac4c37d7c0.jpg.webp",
+      "https://imgcps.jd.com/ling/100008348542/5omL5py66LSt5a6e5oOg/5aSH6LSn6LaF5YC8/p-5bd8253082acdd181d02fa3b/342c5843/590x470.jpg"
+    ],
+    "category": [
+      {
+        "image": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3057865059,2384921324&fm=26&gp=0.jpg",
+        "mallCategoryName": "白酒"
+      },
+      {
+        "image": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1120797214,1280545949&fm=26&gp=0.jpg",
+        "mallCategoryName": "啤酒"
+      },
+      {
+        "image": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3457221451,3265571890&fm=26&gp=0.jpg",
+        "mallCategoryName": "葡萄酒"
+      },
+      {
+        "image": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4004217112,270593744&fm=26&gp=0.jpg",
+        "mallCategoryName": "清酒洋酒"
+      },
+      {
+        "image": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2053100577,4078514344&fm=26&gp=0.jpg",
+        "mallCategoryName": "保健酒"
+      },
+      {
+        "image": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2111525037,2227247997&fm=26&gp=0.jpg",
+        "mallCategoryName": "预调酒"
+      },
+      {
+        "image": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3368222495,2632432303&fm=26&gp=0.jpg",
+        "mallCategoryName": "下菜小酒"
+      },
+      {
+        "image": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1798900452,1903905276&fm=26&gp=0.jpg",
+        "mallCategoryName": "饮料"
+      },
+      {
+        "image": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3136375191,1553336371&fm=26&gp=0.jpg",
+        "mallCategoryName": "乳制品"
+      },
+      {
+        "image": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2223342716,3221822182&fm=26&gp=0.jpg",
+        "mallCategoryName": "休闲零食"
+      }
+    ],
+    "advertesPicture": {
+      "PICTURE_ADDRESS": "images/ADBanner.jpg"
+    },
+    "shopInfo": {
+      "leaderImage": "images/LeaderPhone.jpg",
+      "leaderPhone": "18875033541"
+    },
+    "recommend": [
+      {
+        "image": "https://img12.360buyimg.com/mobilecms/s280x280_jfs/t1/115407/24/7464/157163/5ec391bcEad17ca62/7611e466f22c99f4.jpg.webp",
+        "mallPrice": "3999.00",
+        "price": "4400.00"
+      },
+      {
+        "image": "https://img12.360buyimg.com/mobilecms/s280x280_jfs/t1/116865/16/6586/123612/5ebb65b0E30087406/6a4683ae6e0a3fb4.png.webp",
+        "mallPrice": "759.00",
+        "price": "899.00"
+      },
+      {
+        "image": "https://img10.360buyimg.com/mobilecms/s280x280_jfs/t1/129554/8/2024/380269/5ec23041E58b1fb9c/d7ceeada2190c7b8.jpg.webp",
+        "mallPrice": "159.00",
+        "price": "179.00"
+      },
+      {
+        "image": "https://img20.360buyimg.com/mobilecms/s280x280_jfs/t1/116051/27/3413/227603/5ea7c774E2ca8de43/7adb1b51702553e2.jpg.webp",
+        "mallPrice": "1048.00",
+        "price": "1189.00"
+      },
+      {
+        "image": "https://img13.360buyimg.com/mobilecms/s280x280_jfs/t1/124567/13/1487/117574/5ebce185Eac331522/83254a1234628556.png.webp",
+        "mallPrice": "19.90",
+        "price": "44.90"
+      },
+      {
+        "image": "https://img20.360buyimg.com/mobilecms/s280x280_jfs/t1/117408/33/6750/163265/5ebcfe6aEb6e1cbe1/ebb5ea5ade189045.jpg.webp",
+        "mallPrice": "159.00",
+        "price": "332.00"
+      }
+    ],
+    "userList":[
+      {
+      "telephone":"13800000000000",
+      "userName":"张三",
+      "idCard":"443426189012211141",
+      "vipRank":"",
+      "roleName":"",
+      "projectName":"项目名",
+      "accountStatus":"",
+      "createTime":"2018-12-12 15：00"
+      }
+    ]
+  }
+}
