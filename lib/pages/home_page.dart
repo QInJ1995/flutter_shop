@@ -4,12 +4,17 @@ import 'dart:convert';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'package:flutter/services.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin {
+class _HomePageState extends State<HomePage>
+    with AutomaticKeepAliveClientMixin {
+  int page = 1;
+  List hotGoodsList = [];
 
   @override
   bool get wantKeepAlive => true;
@@ -17,6 +22,7 @@ class _HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin 
   @override
   void initState() {
     super.initState();
+    _getHotGoods();
   }
 
   @override
@@ -28,7 +34,8 @@ class _HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin 
         ),
         body: FutureBuilder(
           // 获取数据
-          future: DefaultAssetBundle.of(context).loadString("mock/home.json"),
+          future: DefaultAssetBundle.of(context)
+              .loadString("mock/homePageContext.json"),
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               // 数据解析
@@ -72,6 +79,32 @@ class _HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin 
           },
         ));
   }
+
+  // 获取火爆商品数据
+  // void _getHotGoods(){
+  //    var formPage={'page': page};
+  //    request('homePageBelowConten',formData:formPage).then((val){
+
+  //      var data=json.decode(val.toString());
+  //      List<Map> newGoodsList = (data['data'] as List ).cast();
+  //      setState(() {
+  //        hotGoodsList.addAll(newGoodsList);
+  //        page++;
+  //      });
+  //    });
+  // }
+  // 模拟接口
+  void _getHotGoods() {
+    rootBundle.loadString('mock/homePageBelowConten.json').then((val) {
+      var data = json.decode(val);
+      print(data['data']['data']['${page}']);
+      List newGoodsList = data['data']['data']['${page}'];
+      setState(() {
+        hotGoodsList.addAll(newGoodsList);
+        page++;
+      });
+    });
+  }
 }
 
 // 首页轮播组件编写
@@ -104,7 +137,7 @@ class TopNavigator extends StatelessWidget {
   Widget _gridViewItemUI(BuildContext context, item) {
     return InkWell(
       onTap: () {
-        print('点击了导航'+item['mallCategoryName']);
+        print('点击了导航' + item['mallCategoryName']);
       },
       child: Column(
         children: <Widget>[
@@ -264,22 +297,20 @@ class FloorTitle extends StatelessWidget {
 }
 
 // 楼层商品组件
-class FloorContent  extends StatelessWidget {
+class FloorContent extends StatelessWidget {
   final List floorGoodsList;
-  const FloorContent ({Key key, this.floorGoodsList}) : super(key: key);
+  const FloorContent({Key key, this.floorGoodsList}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Column(
-        children: <Widget>[
-          _firstRow(),
-          _othergoods()
-        ],
+        children: <Widget>[_firstRow(), _othergoods()],
       ),
     );
   }
 
+  // 第一行商品
   Widget _firstRow() {
     return Row(
       children: <Widget>[
@@ -294,6 +325,7 @@ class FloorContent  extends StatelessWidget {
     );
   }
 
+  // 其他行商品
   Widget _othergoods() {
     return Row(
       children: <Widget>[
@@ -303,6 +335,7 @@ class FloorContent  extends StatelessWidget {
     );
   }
 
+  // 单个商品元素
   Widget _goodsItem(Map goods) {
     return Container(
       width: ScreenUtil().setWidth(375),

@@ -1,0 +1,101 @@
+{
+"status":"1",
+"msg":"成功",
+  "data":{
+    "current":1,
+    "size":20,
+    "total":1,
+    "data": {
+      "1": [
+        {
+          "image": "https://img10.360buyimg.com/mobilecms/s200x200_jfs/t1/126849/36/2193/104087/5ec3521dEc436d219/3394d42bd64623bc.jpg!cc_200x200.webp",
+          "name": "床 实木床软包简易小户型现代简约1.5米学生床租房家具1.8米卧室大床出租房床1.2米 实木床 1800*2000mm",
+          "mallPrice": "334.00",
+          "price": "752.00"
+        },
+        {
+            "image": "https://img10.360buyimg.com/mobilecms/s200x200_jfs/t1/98320/15/15845/174877/5e75b192E4a45ed6f/f6a5a89082e9e141.jpg!cc_200x200.webp",
+            "name": "【设计师专柜款】【男女潮款 专柜定制】漫步者/MBZ 高级定制巴黎限量版时尚熊猫鞋休闲老爹鞋 黑灰男款-专柜品质 男款41",
+            "mallPrice": "88.00",
+            "price": "258.99"
+          },
+          {
+            "image": "https://img11.360buyimg.com/mobilecms/s200x200_jfs/t1/117991/35/3222/133600/5ea688ffEdc8daa21/66a859cf6f4b9119.jpg!cc_200x200.webp",
+            "name": "【网红推荐！24K黄金精华液】紧致修护 细化毛孔 提亮肤色嫩白保湿水润",
+            "mallPrice": "9.90",
+            "price": "29.00"
+          },
+          {
+            "image": "https://img14.360buyimg.com/mobilecms/s200x200_jfs/t1/120985/3/2301/106910/5ec3ac54Eaf4026c7/ec52bc3ffb9c0fcb.jpg!cc_200x200.webp",
+            "name": "【9.9元超值单瓶装！限时限量抢购】卵壳蛋蛋面膜涂抹式夜间睡眠免洗补水保湿紧致提亮TJ 【5.26点此下单仅需9.9元】提拉紧致蛋蛋面膜",
+            "mallPrice": "9.90",
+            "price": "29.00"
+          }
+      ],
+      "2": [
+        {
+          "image": "https://img11.360buyimg.com/mobilecms/s200x200_jfs/t1/127999/38/2382/338251/5ec4f2c5E07a87bc7/2defaa25e87bc840.jpg!cc_200x200.webp",
+          "name": "HOMAS FARMS 澳洲安格斯上脑牛排 200g 谷饲原切 进口牛肉 烧烤健身食材 烤肉生鲜",
+          "mallPrice": "27.80",
+          "price": "57.00"
+        },
+        {
+          "image": "https://img13.360buyimg.com/mobilecms/s200x200_jfs/t1/117538/33/7638/47851/5ec3d167E39bb918f/09152c97eb8d21f0.jpg!cc_200x200.webp",
+          "name": "嘟呗家纺 磨毛四件套床单被套保暖套件简约风床上用品双人大床1.8米/1.5米四件套1.2M三件套 深灰 1.5米床单款【四件套被套200*230CM】",
+          "mallPrice": "98.00",
+          "price": "239.00"
+        },
+        {
+          "image": "https://img14.360buyimg.com/mobilecms/s200x200_jfs/t1/127989/39/1636/44649/5ebe8c6eE9391a46f/326afbe620f494bd.jpg!cc_200x200.webp",
+          "name": "【100%纯棉短袖】2020夏季男士短袖T恤tj UPS暗粉色 L",
+          "mallPrice": "37.00",
+          "price": "88.00"
+        },
+        {
+          "image": "https://img20.360buyimg.com/mobilecms/s200x200_jfs/t1/117532/21/6424/194647/5eba5a97E12e688e4/199f92bcab49d423.jpg!cc_200x200.webp",
+          "name": "无线充电器7.5W/10W快充适用苹果iPhone11Pro Max/XR/Xs/X三星华为小米手机 酷睿黑【可折叠,10W+3.0快充头】苹果安卓通用",
+          "mallPrice": "68.00",
+          "price": "118.00"
+          }
+      ],
+      "3": [
+        {
+          "image": "https://img20.360buyimg.com/mobilecms/s200x200_jfs/t1/117840/22/7608/145002/5ec4bb99E23f54fc1/4e2773c59fcda07e.jpg!cc_200x200.webp",
+          "name": "天辰 (TIANCHEN) 卡通进门垫地垫防滑耐磨玄关水晶绒毯 家用厨房浴室防污脚垫垫子 彩熊2 40*60cm",
+          "mallPrice": "17.00",
+          "price": "29.00"
+        },
+        {
+          "image": "https://img20.360buyimg.com/mobilecms/s200x200_jfs/t1/122948/24/1630/168939/5ebe4351E8750bf7f/c15d41f3a5831603.jpg!cc_200x200.webp",
+          "name": "禾式 运动套装男2020夏季户外速干圆领短袖T恤短裤篮球服健身套装跑步服HKE 黑色 4XL",
+          "mallPrice": "48.00",
+          "price": "138.00"
+        },
+        {
+          "image": "https://img13.360buyimg.com/mobilecms/s200x200_jfs/t1/129181/11/1143/163649/5eb9f5f5E435f4fe3/4bf1d967c0cc2ebc.jpg!cc_200x200.webp",
+          "name": "【保价618】德邦 餐桌北欧实木餐桌椅组合日式小户型饭桌4人6人现代简约长方形餐桌子橡胶木餐厅 原木色（路易斯椅） 单桌1.2米（不包安装",
+          "mallPrice": "498.00",
+          "price": "1110.00"
+        },
+        {
+          "image": "https://img11.360buyimg.com/mobilecms/s200x200_jfs/t1/109847/19/15501/86409/5ead3139Ec735a988/e2b06f9e92cb8792.jpg!cc_200x200.webp",
+          "name": "眼部冷敷理疗贴护眼贴眼膜缓解眼疲劳眼干眼涩眼痛模糊 一盒【15袋】 2片/袋",
+          "mallPrice": "39.90",
+          "price": "59.90"
+        }
+      ]
+    },
+    "userList":[
+      {
+      "telephone":"13800000000000",
+      "userName":"张三",
+      "idCard":"443426189012211141",
+      "vipRank":"",
+      "roleName":"",
+      "projectName":"项目名",
+      "accountStatus":"",
+      "createTime":"2018-12-12 15：00"
+      }
+    ]
+  }
+}
