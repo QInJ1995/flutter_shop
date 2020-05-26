@@ -53,6 +53,13 @@ flutter:
     - images/dlam.jpg
     - images/ADBanner.jpg
     - images/LeaderPhone.jpg
+    - images/floor1Pic.jpg
+    - images/floor2Pic.jpg
+    - images/wine1.jpg
+    - images/wine2.jpg
+    - images/wine3.jpg
+    - images/wine4.jpg
+    - images/wine5.jpg
     - mock/home.json
     - mock/person.json
     # - images/a_dot_burr.jpeg

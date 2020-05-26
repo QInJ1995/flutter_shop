@@ -92,6 +92,26 @@
         "price": "332.00"
       }
     ],
+    "floor1Pic": {
+      "PICTURE_ADDRESS": "images/floor1Pic.jpg"
+    },
+    "floor2Pic": {
+      "PICTURE_ADDRESS": "images/floor2Pic.jpg"
+    },
+    "floor1": [
+      {"image": "images/wine1.jpg"},
+      {"image": "images/wine2.jpg"},
+      {"image": "images/wine3.jpg"},
+      {"image": "images/wine4.jpg"},
+      {"image": "images/wine5.jpg"}
+    ],
+    "floor2": [
+      {"image": "images/wine1.jpg"},
+      {"image": "images/wine2.jpg"},
+      {"image": "images/wine3.jpg"},
+      {"image": "images/wine4.jpg"},
+      {"image": "images/wine5.jpg"}
+    ],
     "userList":[
       {
       "telephone":"13800000000000",

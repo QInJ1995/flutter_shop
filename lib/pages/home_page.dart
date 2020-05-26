@@ -41,6 +41,10 @@ class _HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin 
               String leaderImage = data['data']['shopInfo']['leaderImage'];
               String leaderPhone = data['data']['shopInfo']['leaderPhone'];
               List recommendList = data['data']['recommend'];
+              String floor1Title = data['data']['floor1Pic']['PICTURE_ADDRESS'];
+              List floor1 = data['data']['floor1'];
+              String floor2Title = data['data']['floor2Pic']['PICTURE_ADDRESS'];
+              List floor2 = data['data']['floor2'];
               // List<Map> swiperDataList = (data['data']['slides'] as List).cast(); // 顶部轮播组件数
               // print(recommendList);
               return SingleChildScrollView(
@@ -51,7 +55,11 @@ class _HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin 
                     ADBanner(advertesPicture: advertesPicture),
                     LeaderPhone(
                         leaderImage: leaderImage, leaderPhone: leaderPhone),
-                    Recommend(recommendList: recommendList)
+                    Recommend(recommendList: recommendList),
+                    FloorTitle(picture_address: floor1Title),
+                    FloorContent(floorGoodsList: floor1),
+                    FloorTitle(picture_address: floor2Title),
+                    FloorContent(floorGoodsList: floor2)
                   ],
                 ),
               );
@@ -96,7 +104,7 @@ class TopNavigator extends StatelessWidget {
   Widget _gridViewItemUI(BuildContext context, item) {
     return InkWell(
       onTap: () {
-        print('点击了导航');
+        print('点击了导航'+item['mallCategoryName']);
       },
       child: Column(
         children: <Widget>[
@@ -113,7 +121,7 @@ class TopNavigator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: ScreenUtil().setHeight(320),
+        height: ScreenUtil().setHeight(340),
         padding: EdgeInsets.all(3.0),
         child: GridView.count(
           crossAxisCount: 5,
@@ -236,6 +244,73 @@ class Recommend extends StatelessWidget {
       margin: EdgeInsets.only(top: 10.0),
       child: Column(
         children: <Widget>[_titleWidget(), _recommedList()],
+      ),
+    );
+  }
+}
+
+// 楼层标题
+class FloorTitle extends StatelessWidget {
+  final String picture_address;
+  const FloorTitle({Key key, this.picture_address}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(8.0),
+      child: Image.asset(picture_address),
+    );
+  }
+}
+
+// 楼层商品组件
+class FloorContent  extends StatelessWidget {
+  final List floorGoodsList;
+  const FloorContent ({Key key, this.floorGoodsList}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Column(
+        children: <Widget>[
+          _firstRow(),
+          _othergoods()
+        ],
+      ),
+    );
+  }
+
+  Widget _firstRow() {
+    return Row(
+      children: <Widget>[
+        _goodsItem(floorGoodsList[0]),
+        Column(
+          children: <Widget>[
+            _goodsItem(floorGoodsList[1]),
+            _goodsItem(floorGoodsList[2])
+          ],
+        )
+      ],
+    );
+  }
+
+  Widget _othergoods() {
+    return Row(
+      children: <Widget>[
+        _goodsItem(floorGoodsList[3]),
+        _goodsItem(floorGoodsList[4])
+      ],
+    );
+  }
+
+  Widget _goodsItem(Map goods) {
+    return Container(
+      width: ScreenUtil().setWidth(375),
+      child: InkWell(
+        onTap: () {
+          print('点击了楼层商品');
+        },
+        child: Image.asset(goods['image']),
       ),
     );
   }
