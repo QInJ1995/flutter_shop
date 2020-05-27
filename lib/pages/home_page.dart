@@ -151,19 +151,6 @@ class _HomePageState extends State<HomePage>
   //      });
   //    });
   // }
-  // 模拟接口
-  void _getHotGoods() {
-    rootBundle.loadString('mock/homePageBelowConten.json').then((val) {
-      var data = json.decode(val);
-      // print(data['data']['data']['${page}']);
-      List newGoodsList = data['data']['data']['${page}'];
-      setState(() {
-        hotGoodsList.addAll(newGoodsList);
-        page++;
-      });
-      print(hotGoodsList);
-    });
-  }
 
   // 火爆专区标题
   Widget hotTitle = Container(
@@ -286,9 +273,10 @@ class TopNavigator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: ScreenUtil().setHeight(340),
+        height: ScreenUtil().setHeight(320),
         padding: EdgeInsets.all(3.0),
         child: GridView.count(
+          physics: NeverScrollableScrollPhysics(),
           crossAxisCount: 5,
           padding: EdgeInsets.all(5.0),
           children: navigatorList.map((item) {

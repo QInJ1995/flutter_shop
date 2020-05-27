@@ -64,6 +64,7 @@ flutter:
     - images/wine5.jpg
     - mock/homePageContext.json
     - mock/homePageBelowConten.json
+    - mock/getCategory.json
     - mock/person.json
     # - images/a_dot_burr.jpeg
     # - images/a_dot_ham.jpeg
