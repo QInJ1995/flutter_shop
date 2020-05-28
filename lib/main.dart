@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:provide/provide.dart';
 
 import './pages/index_page.dart';
+import './provide/counter.dart';
+import './provide/child_category.dart';
 
 void main() {
-  runApp(MyApp());
+  var counter = Counter();
+  var childCategory = ChildCategory();
+  var providers = Providers();
+  providers
+    ..provide(Provider<Counter>.value(counter))
+    ..provide(Provider<ChildCategory>.value(childCategory));
+  runApp(ProviderNode(child: MyApp(), providers: providers));
 }
 
 class MyApp extends StatelessWidget {
@@ -19,9 +28,8 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           // 主题
           theme: ThemeData(
-            // App默认颜色
-            primaryColor: Colors.pink
-          ),
+              // App默认颜色
+              primaryColor: Colors.pink),
           home: IndexPage(),
         ),
       ),
