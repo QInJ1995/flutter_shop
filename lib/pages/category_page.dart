@@ -76,7 +76,7 @@ class _LeftCategoryNavState extends State<LeftCategoryNav> {
     isClick = (index == listIndex) ? true : false;
     return InkWell(
       onTap: () {
-        print('点击了商品分类导航${index}');
+        // print('点击了商品分类导航${index}');
         setState(() {
           listIndex = index;
         });
@@ -88,7 +88,7 @@ class _LeftCategoryNavState extends State<LeftCategoryNav> {
         // padding: EdgeInsets.only(left: 10.0, top: 20.0),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: isClick ? Colors.black26 : Colors.white,
+          color: isClick ? Color.fromRGBO(236, 238, 239, 1.0) : Colors.white,
           border: Border(
             bottom: BorderSide(width: 1.0, color: Colors.black12),
           ),
@@ -126,8 +126,8 @@ class _LeftCategoryNavState extends State<LeftCategoryNav> {
       });
       Provide.value<ChildCategory>(context)
           .getChildCategory(categoryList[0].bxMallSubDto);
-      print(categoryList[0].bxMallSubDto);
-      categoryList[0].bxMallSubDto.forEach((item) => print(item.mallSubName));
+      // print(categoryList[0].bxMallSubDto);
+      // categoryList[0].bxMallSubDto.forEach((item) => print(item.mallSubName));
       // list.data.forEach((item) => print(item.mallCategoryName));
     });
   }
