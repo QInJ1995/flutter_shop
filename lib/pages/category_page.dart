@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/services.dart';
 import 'package:provide/provide.dart';
+// import 'package:fluttertoast/fluttertoast.dart';
 
 import '../model/category.dart';
 import '../model/categoryGoodsList.dart';
@@ -180,6 +181,15 @@ class _LeftCategoryNavState extends State<LeftCategoryNav> {
             .getGoodsList(goodsList.data);
       });
     } else {
+      // Fluttertoast.showToast(
+      //   msg: "This is Center Short Toast",
+      //   toastLength: Toast.LENGTH_SHORT,
+      //   gravity: ToastGravity.CENTER,
+      //   timeInSecForIosWeb: 1,
+      //   backgroundColor: Colors.red,
+      //   textColor: Colors.white,
+      //   fontSize: 16.0,
+      // );
       Provide.value<CategoryGoodsListProvide>(context).getGoodsList([]);
     }
   }
@@ -227,7 +237,8 @@ class _RightCategoryNavState extends State<RightCategoryNav> {
         : false;
     return InkWell(
       onTap: () {
-        Provide.value<ChildCategory>(context).changeChildIndex(index, item.mallSubId);
+        Provide.value<ChildCategory>(context)
+            .changeChildIndex(index, item.mallSubId);
         // _getGoodList(item.mallSubId);
       },
       child: Container(
