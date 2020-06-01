@@ -5,7 +5,8 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 
 class DetailsInfoProvide with ChangeNotifier {
-  List goodsInfo = null;
+  Object goodsInfo = null;
+  // DetailsModel goodsInfo =null;
 
   //从后台获取商品信息
   // getGoodsInfo(String id) {
@@ -25,7 +26,7 @@ class DetailsInfoProvide with ChangeNotifier {
       var responseData = json.decode(val.toString());
       print(responseData);
       goodsInfo = responseData;
-
+      // goodsInfo = DetailsModel.fromJson(responseData);
       notifyListeners();
     });
   }
