@@ -5,7 +5,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 
 class DetailsInfoProvide with ChangeNotifier {
-  Object goodsInfo = null;
+  dynamic goodsInfo = null;
   // DetailsModel goodsInfo =null;
 
   //从后台获取商品信息
@@ -22,10 +22,10 @@ class DetailsInfoProvide with ChangeNotifier {
   //   });
   // }
   getGoodsInfo(String id) {
-    rootBundle.loadString('mock/getMallGoods.json').then((val) {
+    rootBundle.loadString('mock/getGoodDetailById.json').then((val) {
       var responseData = json.decode(val.toString());
-      print(responseData);
-      goodsInfo = responseData;
+      goodsInfo = responseData['data']['goodInfo'];
+      // print(goodsInfo);
       // goodsInfo = DetailsModel.fromJson(responseData);
       notifyListeners();
     });
