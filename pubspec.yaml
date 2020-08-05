@@ -14,7 +14,7 @@ description: A new Flutter project.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.5.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -36,13 +36,24 @@ dependencies:
   # 状态管理
   provide: ^1.0.2
   # 轻提示
-  fluttertoast: ^4.0.0
+  fluttertoast: ^7.0.2
   # 路由
   fluro: "^1.6.3"
+  # 动态现在wiget
+  dynamic_widget: ^2.0.2
+  # Hive
+  hive: ^1.4.1+1
+  hive_flutter: ^0.3.0+2
+  #数据图形化
+  intervalprogressbar: ^2.0.1
+  #Toast
+  
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
 
 # For information on the generic Dart part of this file, see the
