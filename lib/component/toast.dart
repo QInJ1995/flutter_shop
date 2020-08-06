@@ -1,10 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:bot_toast/bot_toast.dart';
 
-/// @descriptions: Toast封装
-/// @author: frqin
-/// @date: 2020-08-05
-/// version: 1.0.0
  
 class CustomToast {
   static OverlayEntry _overlayEntry; // toast靠它加到屏幕上
@@ -59,6 +56,7 @@ class CustomToast {
                     duration: _showing
                         ? Duration(milliseconds: 100)
                         : Duration(milliseconds: 400),
+                    // child: BotToast.showText(text: "有小伙伴肯定会问我，为什么这套视频要收费？"),
                     child: _buildToastWidget(),
                   ),
                 )),

@@ -1,16 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-/// @descriptions: 卡片封装
-/// @author: frqin
-/// @date: 2020-08-05
-/// version: 1.0.0
 
 class CustomCard extends StatefulWidget {
+  // 卡片标题
   String title;
+  // 卡片内容
   String content;
+  // 卡片是否横向布局
   bool isRow;
+  // 卡片高度
   dynamic height;
+  // 卡片点击事件
   Function click;
   CustomCard({Key key, this.title, this.content, this.isRow, this.height, this.click}) : super(key: key);
   @override
@@ -44,21 +45,23 @@ class _CustomCardState extends State<CustomCard> {
         this.click();
       },
       child: Card(
-        //设置圆角度，也可以不设置有默认值
+        /// 设置圆角度，也可以不设置有默认值
         shape: RoundedRectangleBorder(
-          //形状
-          //修改圆角
+          /// 形状
+          /// 修改圆角
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
-        //阴影颜色
+        /// 阴影颜色
         color: Colors.white,
-        //阴影高度
+        /// 阴影高度
         elevation: 4.0,
+        /// 卡片内容
         child: Container(
           height: height,
-          child: isRow ? Row(
+          child: isRow ? Row( /// 判断卡片横向布局还是纵向布局
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
+              /// 左边信息
               Container(
                 padding: EdgeInsets.only(left: 10.0),
                 child: Column(
@@ -70,6 +73,7 @@ class _CustomCardState extends State<CustomCard> {
                   ],
                 )
               ),
+              /// 右边数据
               Container(
                 padding: EdgeInsets.only(right: 10.0),
                 child: Text("$content", style: TextStyle(color: Colors.grey)),
@@ -78,11 +82,13 @@ class _CustomCardState extends State<CustomCard> {
           ) : Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              /// 上边信息
               Container(
                 alignment: Alignment.centerLeft,
                 padding: EdgeInsets.only(left: 10.0),
                 child: Text("$title", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),),
               ),
+              /// 下边数据
               Container(
                 alignment: Alignment.centerLeft,
                 padding: EdgeInsets.only(left: 10.0),

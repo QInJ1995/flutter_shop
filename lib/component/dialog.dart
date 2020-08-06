@@ -1,10 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-/// @descriptions: Dialog封装
-/// @author: frqin
-/// @date: 2020-08-05
-/// version: 1.0.0
 
 class CustomDialog extends Dialog {
   final String title; // 顶部标题

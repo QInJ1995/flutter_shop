@@ -47,7 +47,7 @@ dependencies:
   #数据图形化
   intervalprogressbar: ^2.0.1
   #Toast
-  
+  bot_toast: ^3.0.1
 
 
 dev_dependencies:
